@@ -1,222 +1,395 @@
+/* сброс стилей */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
 
 /* root  */
 :root {
-    --brand-color: #2196F3;
-    --brand-black: #212121;
-    --brand-grey: #757575;
-    --main-font-weight: 700;
-    --dark-background: #2F303A;
-} 
+  --brand-color: #2196f3;
+  --brand-black: #212121;
+  --brand-grey: #757575;
+  --main-font-weight: 700;
+  --dark-background: #2f303a;
+}
 /* задаем шрифт , цвет и размер всему тексту */
 .all-body {
-    font-family: Roboto, Arial, Helvetica, sans-serif ;
-    font-weight: var(--main-font-weight);
-    color: var(--brand-black);
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  font-weight: var(--main-font-weight);
+  color: var(--brand-black);
 }
 
 .all-body ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 /* убираем декорацию при посещении */
 .all-body a:visited {
-text-decoration: none;
-color: none;
+  text-decoration: none;
+  color: none;
 }
 
 /* убираем декорацию для всех ссылок */
-.all-body a { 
-text-decoration: none;
+.all-body a {
+  text-decoration: none;
 }
 
 /* Задаём размер заголовка "чем мы занимаемся" */
 .all-body h2 {
-font-size: 36px ;
-text-align: center;    
+  font-size: 36px;
+  text-align: center;
 }
 
 /* задаем размер заголовков "наши приемущества"  */
 .all-body h3 {
-font-size: 14px ;
-
+  font-size: 14px;
 }
 
 /* Логотип  */
 /* задает логотипу шрифт и размер */
 .main-logo {
-font-family: Raleway, Arial, Helvetica, sans-serif ;
-font-weight: var(--main-font-weight);
-font-size: 26px ;
-color:var(--brand-color) ;
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: var(--main-font-weight);
+  font-size: 26px;
+  color: var(--brand-color);
+}
+
+.main-logo-f {
+  font-family: Raleway, Arial, Helvetica, sans-serif;
+  font-weight: var(--main-font-weight);
+  font-size: 26px;
+  color: var(--brand-color);
 }
 /* Цвет "WEB" */
 .logo {
-color: #2196F3;
+  color: #2196f3;
 }
 /* цвет "STUDIO" вверху */
-.studio-up{
-    color:var(--brand-black);
+.studio-up {
+  color: var(--brand-black);
 }
 
 /* цвет "STUDIO" внизу */
 .studio-down {
-    color:white;
+  color: white;
 }
-
 
 /* Стили header */
 
 /* задаёт стиль текста в навигации */
-.heder-navigation {
-font-size: 14px ;
-font-weight: 500; 
-color: var(--brand-black);
+.header {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brand-black);
 }
 
 /* Стиль ссылок  в навигации */
 .navigation-link a {
-color:var(--brand-black);
-text-decoration: none;
+  color: var(--brand-black);
+  text-decoration: none;
 }
 
 .navigation-link a:hover {
-color:var(--brand-color);
+  color: var(--brand-color);
 }
 .navigation-link a:focus {
-color:var(--brand-color);
+  color: var(--brand-color);
 }
 
 /* стиль контактов в навигации */
 .navigation-contacts a {
-color: var(--brand-grey);
-text-decoration: none;
+  color: var(--brand-grey);
+  text-decoration: none;
 }
 .navigation-contacts a:hover {
-color: var(--brand-color);
+  color: var(--brand-color);
 }
 .navigation-contacts a:focus {
-color: var(--brand-color);
+  color: var(--brand-color);
 }
-
-
-
 
 /*  стиль кнопки "заказать услугу" */
 .order-button {
-background-color:var(--brand-color);
-font-size: 16px;
-font-weight: 900;
-color: white;
-margin: 0 auto;
-display: block;
-cursor: pointer;
+  background-color: var(--brand-color);
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 900;
+  color: white;
+  cursor: pointer;
 }
 
 /* Титульный текст */
 .page-title {
-font-size: 44px ;
-font-weight: 900;
-text-align: center;
-color:white;    
+  font-size: 44px;
+  font-weight: 900;
+  color: white;
 }
 
-/* задаёт фон титульному тексту */
-.main-title {
-    background-color: var(--dark-background);
-}
 
 
 /* стиль основного  текста  */
 .our-advantage-text p {
-font-size: 14px ;
-font-weight: 400;
-color: #757575;    
-} 
-
-/* отключает точки в списках */
-.what-we-do-img , .our-team-list , .filter-button-list , .navigation-link , .navigation-contacts , .our-project-list , .our-advantage-text {
-    list-style: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #757575;
+  line-height: 1.7 ;
 }
-
 
 /* Фон секции "наша команда" */
 .our-team {
-background-color: #F5F4FA;
+  background-color: #f5f4fa;
 }
 
 /* размер текста "наша команда" */
 .our-team-title {
-font-size: 36px ;
-
+  font-size: 36px;
 }
 
 /* Задаёт стиль именам людей и именам проектов */
-.worker-name , .project-name {
-font-size: 16px ;
-font-weight: 500;
-text-align: center;
+.worker-name,
+.project-name {
+  font-size: 16px;
+  font-weight: 500;
 }
 
 /* задаёт стиль специализациям работников и специализациям проектов  */
-.worker-specialization , .project-specialization  {
-font-size: 16px ;
-font-weight: 400;
-color: var(--brand-grey);
-text-align: center;
+.worker-specialization,
+.project-specialization {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--brand-grey);
 }
 
 /* Стили footer */
 
 /* задаёт стиль адресу в футере */
 .footer-address {
-font-size: 14px ;
-font-weight: 400;
-font-style: normal;
-color: white;    
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
 }
 
 /* задаёт стиль контактам в футере */
 .footer-contacts {
-text-decoration: none;
-color: var(--brand-grey);
+  text-decoration: none;
+  color: var(--brand-grey);
 }
-
 
 .footer-contacts:hover {
-color:var(--brand-color) ;
+  color: var(--brand-color);
 }
-
 
 .footer-contacts:focus {
-color:var(--brand-color) ;
-}
-
-/* задаёт фон в футере */
-footer {
-    background-color: var(--dark-background);
+  color: var(--brand-color);
 }
 
 
 
-/* исключительно для портфолио  */
- 
-/* стиль фильтр-кнопок Портфолио */
 .filter-button {
-font-family: Roboto, Arial, Helvetica, sans-serif ;
-background-color: white;
-font-size: 16px;
-font-weight: 500;
-color:var(--brand-black);  
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  background-color: white;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--brand-black);
 }
 
 .filter-button:hover {
-    color: white;
-    background-color:var(--brand-color);
-    cursor: pointer;
+  color: white;
+  background-color: var(--brand-color);
+  cursor: pointer;
 }
 .filter-button:active {
-    color: white;
-    background-color:var(--brand-color);
-    cursor: pointer;
+  color: white;
+  background-color: var(--brand-color);
+  cursor: pointer;
 }
 
+/* Работа с контеёнерами и флексами */
+
+.header {
+  display: flex;
+  height: 80px;
+  /* width: 1600px; */
+  /* align-items: center; */
+  
+}
+
+.main-logo {
+  width: 160px;
+  padding-left: 15px;
+  margin-top: 24px;
+  margin-right: 93px;
+  margin-bottom: 25px;
+
+}
+
+.navigation-link {
+  display: flex;
+ width: 294px;
+ justify-content: space-between;
+ padding: 0px;
+}
+
+.header-navigation {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.nav-contacts-box {
+  display:flex;
+ 
+}
+
+
+.navigation-contacts {
+  display: flex;
+  padding: 0%;
+ 
+}
+
+.nav-contacts-box {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 331px;
+}
+
+
+
+.email {
+  padding-left: 50px;
+  padding-right: 15px;
+}
+
+/* задаёт стиль титульному тексту */
+.main-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--dark-background);
+  height: 600px;
+  width: 1600px;
+
+}
+
+.page-title {
+  margin: 200px 452px 30px 452px;
+  text-align: center;
+}
+
+
+.conteiner {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+
+.advantage-box {
+  display: flex;
+  gap: 30px;
+  text-align: left;
+  align-items: baseline;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0%;
+
+}
+
+.advantage-box li {
+  width: 270px;
+
+}
+
+.what-we-do-img {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+  padding-left: 15px;
+}
+
+.our-team-title {
+  padding-bottom: 50px;
+}
+
+.our-team-list {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 30px;
+  
+}
+
+.our-team-list li {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+.worker-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+} 
+
+.worker-specialization {
+  margin-bottom: 30px;
+}
+  
+.down-block {
+  background-color: var(--dark-background);
+}
+
+.main-logo-f {
+  padding-left: 15px;
+  padding-top: 60px;
+}
+
+.down-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  padding-left: 15px;
+}
+
+
+.what-we-do-title {
+padding-top: 0%;
+}
