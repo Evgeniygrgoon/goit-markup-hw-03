@@ -138,16 +138,31 @@ ol[class] {
   height: 50px;
   border-radius: 4px;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: 700;
   color: white;
   cursor: pointer;
+  margin-left: 500px;
+  margin-top: 30px;
+  border: 0;
 }
 
 /* Титульный текст */
 .page-title {
+  text-align: center;
   font-size: 44px;
   font-weight: 900;
+  text-transform: uppercase;
+  padding-top: 200px;
   color: white;
+}
+
+.our-advantage-text  {
+  margin-top: 94px;
+}
+
+.text-advantage p {
+  font-weight: 400 ;
+
 }
 
 
@@ -160,6 +175,8 @@ ol[class] {
   line-height: 1.7 ;
 }
 
+
+
 /* Фон секции "наша команда" */
 .our-team {
   background-color: #f5f4fa;
@@ -171,10 +188,15 @@ ol[class] {
 }
 
 /* Задаёт стиль именам людей и именам проектов */
-.worker-name,
-.project-name {
+.worker-name  {
   font-size: 16px;
   font-weight: 500;
+}
+
+.project-name {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 /* задаёт стиль специализациям работников и специализациям проектов  */
@@ -183,6 +205,11 @@ ol[class] {
   font-size: 16px;
   font-weight: 400;
   color: var(--brand-grey);
+}
+
+.project-specialization {
+  padding-top: 12px;
+  padding-bottom: 24px;
 }
 
 /* Стили footer */
@@ -290,7 +317,7 @@ ol[class] {
 }
 
 /* задаёт стиль титульному тексту */
-.main-title {
+/* .main-title {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -298,27 +325,25 @@ ol[class] {
   height: 600px;
   width: 1600px;
 
+} */
+
+.hero-block {
+  background-color: var(--dark-background);
+  height: 600px;
+ 
 }
 
-.page-title {
-  margin: 200px 452px 30px 452px;
-  text-align: center;
-}
+
+
+
 
 
 .conteiner {
   width: 1200px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin: 0 auto;
+  
 }
 
-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
 
 
 .advantage-box {
@@ -337,6 +362,13 @@ section {
 
 }
 
+.advantage-tittle {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+
 .what-we-do-img {
   display: flex;
   gap: 30px;
@@ -344,7 +376,10 @@ section {
   padding-left: 15px;
 }
 
+
+
 .our-team-title {
+  padding-top: 94px;
   padding-bottom: 50px;
 }
 
@@ -352,6 +387,7 @@ section {
   display: flex;
   padding-left: 15px;
   padding-right: 15px;
+  padding-bottom: 94px;
   gap: 30px;
   
 }
@@ -376,6 +412,11 @@ section {
   
 .down-block {
   background-color: var(--dark-background);
+  
+}
+
+.footer-list {
+  padding-top: 60px;
 }
 
 .main-logo-f {
@@ -388,18 +429,26 @@ section {
   flex-direction: column;
   gap: 9px;
   margin-top: 20px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   padding-left: 15px;
 }
 
 
 .what-we-do-title {
-padding-top: 0%;
+margin-top: 94px;
+margin-bottom: 94px;
 }
 
 
 
 /* стили партфолио */
+
+.portfolio-img-box {
+  margin-top: 94px;
+  padding-bottom: 94px;
+}
+
+
 
 .filter-button-list {
   display: flex;
@@ -424,20 +473,15 @@ padding-top: 0%;
 }
 
 .our-project-list li {
-  /* flex-basis: calc((1200px - 60px) / 3); */
   border-style: solid ;
   border-width: 1px;
   border-color: rgba(238, 238, 238, 1);
   border-radius: 4px;
 }
 
-.project-name {
-  padding-top: 20px;
-  padding-bottom: 4px;
+.project-list-text {
   padding-left: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
-.project-specialization {
-  padding-bottom: 20px;
-  padding-left: 24px;
-}
