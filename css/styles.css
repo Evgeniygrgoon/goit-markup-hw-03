@@ -35,6 +35,13 @@ ol[class] {
   --main-font-weight: 700;
   --dark-background: #2f303a;
 }
+
+.conteiner {
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
 /* задаем шрифт , цвет и размер всему тексту */
 .all-body {
   font-family: Roboto, Arial, Helvetica, sans-serif;
@@ -71,11 +78,17 @@ ol[class] {
 /* Логотип  */
 /* задает логотипу шрифт и размер */
 .main-logo {
+    width: 160px;
+  padding-left: 15px;
+  margin-top: 24px;
+  margin-right: 93px;
+  margin-bottom: 25px;
   font-family: Raleway, Arial, Helvetica, sans-serif;
   font-weight: var(--main-font-weight);
   font-size: 26px;
   color: var(--brand-color);
 }
+
 
 .main-logo-f {
   font-family: Raleway, Arial, Helvetica, sans-serif;
@@ -101,15 +114,40 @@ ol[class] {
 
 /* задаёт стиль текста в навигации */
 .header {
+   display: flex;
+  height: 80px;
   font-size: 14px;
   font-weight: 500;
   color: var(--brand-black);
 }
 
+.header-navigation {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+.nav-contacts-box {
+  margin-top: 32px;
+  margin-bottom: 32px;
+  margin-left: 331px;
+}
+
+.email {
+  padding-left: 50px;
+  padding-right: 15px;
+}
+
+
 /* Стиль ссылок  в навигации */
 .navigation-link a {
   color: var(--brand-black);
   text-decoration: none;
+}
+.navigation-link {
+  display: flex;
+ width: 294px;
+ justify-content: space-between;
+ padding: 0px;
 }
 
 .navigation-link a:hover {
@@ -120,6 +158,18 @@ ol[class] {
 }
 
 /* стиль контактов в навигации */
+
+.nav-contacts-box {
+  display:flex;
+ 
+}
+
+.navigation-contacts {
+  display: flex;
+  padding: 0%;
+ 
+}
+
 .navigation-contacts a {
   color: var(--brand-grey);
   text-decoration: none;
@@ -129,6 +179,15 @@ ol[class] {
 }
 .navigation-contacts a:focus {
   color: var(--brand-color);
+}
+
+
+
+/* блок героя */
+.hero-block {
+  background-color: var(--dark-background);
+  height: 600px;
+ 
 }
 
 /*  стиль кнопки "заказать услугу" */
@@ -156,6 +215,17 @@ ol[class] {
   color: white;
 }
 
+.advantage-tittle {
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-weight: 700;
+}
+
+.advantage-box li {
+  width: 270px;
+
+}
+
 .our-advantage-text  {
   margin-top: 94px;
 }
@@ -165,14 +235,36 @@ ol[class] {
 
 }
 
+.advantage-box {
+  display: flex;
+  gap: 30px;
+  text-align: left;
+  align-items: baseline;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 0%;
+
+}
 
 
-/* стиль основного  текста  */
+/* стиль основного и секиции "чем мы занимаемся"  текста  */
 .our-advantage-text p {
   font-size: 14px;
   font-weight: 400;
   color: #757575;
   line-height: 1.7 ;
+}
+
+.what-we-do-title {
+margin-top: 94px;
+margin-bottom: 94px;
+}
+
+.what-we-do-img {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+  padding-left: 15px;
 }
 
 
@@ -185,7 +277,11 @@ ol[class] {
 /* размер текста "наша команда" */
 .our-team-title {
   font-size: 36px;
+  padding-top: 94px;
+  padding-bottom: 50px;
 }
+
+
 
 /* Задаёт стиль именам людей и именам проектов */
 .worker-name  {
@@ -207,14 +303,58 @@ ol[class] {
   color: var(--brand-grey);
 }
 
+.our-team-list {
+  display: flex;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 94px;
+  gap: 30px;
+  
+}
+
+.our-team-list li {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 4px;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.worker-name {
+  padding-top: 30px;
+  padding-bottom: 10px;
+} 
+
+
+.worker-specialization {
+  margin-bottom: 30px;
+}
+
 .project-specialization {
   padding-top: 12px;
   padding-bottom: 24px;
 }
 
 /* Стили footer */
+.main-logo-f {
+  padding-left: 15px;
+  padding-top: 60px;
+}
 
 /* задаёт стиль адресу в футере */
+
+.down-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 20px;
+  padding-bottom: 60px;
+  padding-left: 15px;
+}
+
 .footer-address {
   font-size: 14px;
   font-weight: 400;
@@ -222,7 +362,17 @@ ol[class] {
   color: white;
 }
 
+.footer-list {
+  padding-top: 60px;
+}
+
 /* задаёт стиль контактам в футере */
+
+.down-block {
+  background-color: var(--dark-background);
+  
+}
+
 .footer-contacts {
   text-decoration: none;
   color: var(--brand-grey);
@@ -259,186 +409,6 @@ ol[class] {
   background-color: var(--brand-color);
   cursor: pointer;
 }
-
-/* Работа с контейнерами и флексами */
-
-.header {
-  display: flex;
-  height: 80px;
-  /* width: 1600px; */
-  /* align-items: center; */
-  
-}
-
-.main-logo {
-  width: 160px;
-  padding-left: 15px;
-  margin-top: 24px;
-  margin-right: 93px;
-  margin-bottom: 25px;
-
-}
-
-.navigation-link {
-  display: flex;
- width: 294px;
- justify-content: space-between;
- padding: 0px;
-}
-
-.header-navigation {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
-
-.nav-contacts-box {
-  display:flex;
- 
-}
-
-
-.navigation-contacts {
-  display: flex;
-  padding: 0%;
- 
-}
-
-.nav-contacts-box {
-  margin-top: 32px;
-  margin-bottom: 32px;
-  margin-left: 331px;
-}
-
-
-
-.email {
-  padding-left: 50px;
-  padding-right: 15px;
-}
-
-/* задаёт стиль титульному тексту */
-/* .main-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--dark-background);
-  height: 600px;
-  width: 1600px;
-
-} */
-
-.hero-block {
-  background-color: var(--dark-background);
-  height: 600px;
- 
-}
-
-
-
-
-
-
-.conteiner {
-  width: 1200px;
-  margin: 0 auto;
-  
-}
-
-
-
-.advantage-box {
-  display: flex;
-  gap: 30px;
-  text-align: left;
-  align-items: baseline;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 0%;
-
-}
-
-.advantage-box li {
-  width: 270px;
-
-}
-
-.advantage-tittle {
-  text-transform: uppercase;
-  padding-bottom: 10px;
-  font-weight: 700;
-}
-
-
-.what-we-do-img {
-  display: flex;
-  gap: 30px;
-  padding-top: 50px;
-  padding-left: 15px;
-}
-
-
-
-.our-team-title {
-  padding-top: 94px;
-  padding-bottom: 50px;
-}
-
-.our-team-list {
-  display: flex;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-bottom: 94px;
-  gap: 30px;
-  
-}
-
-.our-team-list li {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 4px;
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2);
-}
-
-.worker-name {
-  padding-top: 30px;
-  padding-bottom: 10px;
-} 
-
-.worker-specialization {
-  margin-bottom: 30px;
-}
-  
-.down-block {
-  background-color: var(--dark-background);
-  
-}
-
-.footer-list {
-  padding-top: 60px;
-}
-
-.main-logo-f {
-  padding-left: 15px;
-  padding-top: 60px;
-}
-
-.down-contacts {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  margin-top: 20px;
-  padding-bottom: 60px;
-  padding-left: 15px;
-}
-
-
-.what-we-do-title {
-margin-top: 94px;
-margin-bottom: 94px;
-}
-
 
 
 /* стили партфолио */
